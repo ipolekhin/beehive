@@ -311,19 +311,10 @@ img {
   .intro .button {
     margin-top: 5px;
     max-width: 458px; }
-  .intro::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: -100px;
-    width: 100%;
-    background: url("../img/intro-bg-3.png") no-repeat center center;
-    background-position-y: 32px; }
   .intro::after {
     content: "";
     position: absolute;
-    top: 0;
+    top: -100px;
     left: 0;
     width: 960px;
     height: 1302px;
@@ -371,13 +362,36 @@ img {
   .intro__text--last {
     margin-bottom: 10px; }
 
+.intro__icon-1 {
+  position: absolute; }
+  .intro__icon-1--left {
+    top: 0;
+    left: -117px; }
+  .intro__icon-1--right {
+    top: 40px;
+    right: -76px; }
+
+.intro__icon-2 {
+  position: absolute;
+  right: 20px;
+  bottom: -122px; }
+
+.intro__icon-3 {
+  position: absolute;
+  left: 0;
+  bottom: -79px; }
+
+@media (max-width: 1440px) {
+  .intro {
+    overflow: hidden; } }
+
 .about__wrapper {
   position: relative;
-  padding: 10px 150px 70px; }
+  padding: 4px 150px 70px; }
   .about__wrapper::before {
     content: "";
     position: absolute;
-    top: 70px;
+    top: 42px;
     left: 150px;
     width: 521px;
     height: 605px;
@@ -390,20 +404,31 @@ img {
   text-transform: uppercase; }
 
 .about__description {
-  margin-left: auto;
-  max-width: 555px; }
+  margin: 40px 30px 0 auto;
+  max-width: 556px; }
   .about__description img {
-    display: block; }
+    display: block;
+    margin-bottom: 24px; }
   .about__description p {
-    margin: 0;
-    margin-top: 20px; }
+    margin: 0 0 30px 0; }
 
 .about__quote {
-  margin: 0;
-  margin-top: 20px;
-  padding-left: 21px;
+  margin: -14px 0 13px 0;
+  padding-left: 23px;
   font-family: "Arial", sans-serif;
+  text-align: justify;
   border-left: 2px solid #14792e; }
+
+.about__icon-1 {
+  position: absolute;
+  left: 28px;
+  bottom: 120px;
+  width: 102px; }
+
+.about__icon-sign {
+  position: absolute;
+  left: 112px;
+  bottom: -136px; }
 
 .resolve__wrapper {
   padding: 60px 72px; }
