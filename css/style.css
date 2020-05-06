@@ -235,9 +235,11 @@ img {
 .page-header {
   position: relative;
   padding: 7px 0 6px;
+  background-color: #ffffff;
   border-bottom: 1px solid #c0bbbb;
   -webkit-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.24);
-          box-shadow: 0 4px 7px rgba(0, 0, 0, 0.24); }
+          box-shadow: 0 4px 7px rgba(0, 0, 0, 0.24);
+  z-index: 101; }
 
 .page-header__wrapper {
   display: -webkit-box;
@@ -303,23 +305,46 @@ img {
     line-height: 27px;
     color: #ffffff; }
 
-.intro .button {
-  margin-top: 5px;
-  max-width: 458px; }
-
-.intro__wrapper {
+.intro {
   position: relative;
-  padding: 90px 150px; }
-  .intro__wrapper::after {
+  z-index: 100; }
+  .intro .button {
+    margin-top: 5px;
+    max-width: 458px; }
+  .intro::before {
     content: "";
     position: absolute;
     top: 0;
-    right: 150px;
+    left: 0;
+    bottom: -100px;
+    width: 100%;
+    background: url("../img/intro-bg-3.png") no-repeat center center;
+    background-position-y: 32px; }
+  .intro::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 960px;
+    height: 1302px;
+    background: url("../img/intro-bg-1.png") no-repeat top left; }
+
+.intro__wrapper {
+  position: relative;
+  padding: 90px 150px;
+  z-index: 100; }
+  .intro__wrapper::after {
+    content: "";
+    position: absolute;
+    top: 28px;
+    right: 142px;
     width: 481px;
     height: 640px;
-    background: url("../img/intro-man.png") no-repeat center center; }
+    background: url("../img/intro-man.png") no-repeat center center;
+    z-index: -1; }
 
 .intro__head {
+  margin-bottom: 47px;
   max-width: 578px;
   font-size: 64px;
   font-weight: 700;
@@ -333,15 +358,18 @@ img {
   color: #ffa200; }
 
 .intro__text {
-  margin: 20px 0 0 0;
+  margin: 0 0 26px 6px;
   max-width: 568px;
   color: #666666; }
   .intro__text b {
     display: block;
+    margin-bottom: -4px;
     font-size: 30px;
     font-weight: 600;
     line-height: 37px;
     color: #000000; }
+  .intro__text--last {
+    margin-bottom: 10px; }
 
 .about__wrapper {
   position: relative;
