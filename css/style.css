@@ -219,8 +219,8 @@ img {
 .owl-nav {
   position: static; }
   .owl-nav button {
-    width: 55px;
-    height: 55px; }
+    width: 52px;
+    height: 52px; }
   .owl-nav .owl-prev {
     position: absolute;
     top: 50%;
@@ -422,8 +422,7 @@ img {
 .about__icon-1 {
   position: absolute;
   left: 28px;
-  bottom: 120px;
-  width: 102px; }
+  bottom: 180px; }
 
 .about__icon-sign {
   position: absolute;
@@ -431,11 +430,11 @@ img {
   bottom: -136px; }
 
 .resolve__wrapper {
-  padding: 60px 72px; }
+  padding: 87px 72px; }
 
 .resolve__title {
   margin: 0;
-  margin-bottom: 74px;
+  margin-bottom: 58px;
   font-size: 48px;
   line-height: 59px;
   text-transform: uppercase;
@@ -479,7 +478,7 @@ img {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 28px 25px 42px 21px;
+  padding: 28px 30px 42px 21px;
   border-radius: 0 0 15px 15px;
   -webkit-box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1); }
@@ -493,7 +492,7 @@ img {
     background: url("../img/icon-resolve-plus.svg") no-repeat center center; }
 
 .resolve__head {
-  margin: 0 18px 22px 98px;
+  margin: 0 18px 32px 80px;
   font-size: 30px;
   line-height: 37px;
   text-transform: uppercase; }
@@ -505,8 +504,9 @@ img {
 
 .resolve__cost {
   margin-top: auto;
+  margin-left: -5px;
   padding: 0;
-  padding-top: 18px;
+  padding-top: 11px;
   font-weight: 700;
   list-style: none;
   color: #14792e; }
@@ -514,8 +514,8 @@ img {
     color: #000000; }
 
 .resolve__link {
-  margin: 35px auto 0;
-  padding: 6px 12px;
+  margin: 34px auto 0;
+  padding: 8px 14px;
   max-width: 153px;
   font-size: 18px;
   line-height: 22px;
@@ -527,17 +527,27 @@ img {
   background: linear-gradient(180deg, #38b157 0%, #14792e 100%);
   border-radius: 5px; }
 
-.reviews .button {
-  margin: 12px auto 0;
-  max-width: 805px;
-  font-size: 30px;
-  line-height: 37px; }
-
-.reviews__wrapper {
-  background-color: #ffa200; }
+.reviews {
+  position: relative; }
+  .reviews::before {
+    content: "";
+    position: absolute;
+    top: -297px;
+    left: 0;
+    width: 1440px;
+    height: 1300px;
+    border-bottom: 340px solid #000000;
+    background: url("../img/reviews-bg.png") no-repeat top center;
+    z-index: -1; }
+  .reviews .button {
+    margin: 12px auto 0;
+    padding: 10px 20px;
+    max-width: 805px;
+    font-size: 30px;
+    line-height: 37px; }
 
 .reviews__title {
-  margin: 0 auto;
+  margin: 38px auto 0;
   max-width: 250px;
   font-size: 48px;
   line-height: 59px;
@@ -549,8 +559,8 @@ img {
 
 .reviews__item {
   position: relative;
-  margin: 10px auto 0;
-  padding: 172px 45px 38px;
+  margin: 70px auto 0;
+  padding: 136px 0 38px;
   width: 1100px;
   border-radius: 25px;
   background-color: #ffffff;
@@ -558,35 +568,54 @@ img {
           box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1); }
   .reviews__item p {
     margin: 0;
-    margin-top: 20px;
+    margin-bottom: 29px;
+    padding-right: 20px;
+    padding-left: 46px;
     background-color: #ffffff; }
+    .reviews__item p:last-of-type {
+      margin-bottom: 20px; }
 
 .reviews__img {
   position: absolute;
-  top: -10px;
+  top: -68px;
   left: 50%;
   margin-left: -85px; }
 
 .reviews__author {
+  margin: 7px 0 12px;
   font-size: 26px;
   line-height: 32px;
   text-align: center;
   text-transform: uppercase; }
 
+.cases {
+  margin-bottom: 110px; }
+  .cases::after {
+    content: "";
+    position: absolute;
+    bottom: -82px;
+    left: 0;
+    width: 1440px;
+    height: 242px;
+    background: url("../img/cases-bg.png") no-repeat bottom center;
+    z-index: 100; }
+
 .cases__wrapper {
-  padding: 90px 150px;
+  padding: 94px 150px;
   text-align: center;
   color: #ffffff;
-  background-color: #000000; }
+  background-color: #000000;
+  z-index: 101; }
 
 .cases__title {
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 22px;
   font-size: 59px;
   line-height: 72px;
   text-transform: uppercase; }
 
 .cases__list {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -601,9 +630,16 @@ img {
   margin: 0;
   margin-top: 24px;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  z-index: 101; }
   .cases__list img {
     display: block; }
+
+.cases__icon-2 {
+  position: absolute;
+  right: 2px;
+  bottom: -134px;
+  z-index: 102; }
 
 .save__wrapper {
   margin: 0;
