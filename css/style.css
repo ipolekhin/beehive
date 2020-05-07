@@ -599,7 +599,7 @@ img {
     bottom: -82px;
     left: 0;
     width: 1440px;
-    height: 242px;
+    height: 264px;
     background: url("../img/cases-bg.png") no-repeat bottom center;
     z-index: 100; }
 
@@ -661,17 +661,26 @@ img {
   margin: 0;
   padding: 0;
   list-style: none; }
-  .save__list .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .save__list .row:last-child {
-      margin-top: -110px;
-      margin-left: 246px; }
+
+.save__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .save__row:last-child {
+    margin-top: -110px;
+    margin-left: 246px; }
+    .save__row:last-child .save__head {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      height: 176px; }
 
 .save__item {
   position: relative;
-  padding: 126px 40px 40px;
+  padding: 124px 25px 124px;
   width: 466px;
   height: 531px;
   background: url("../img/save-bg.svg") no-repeat center center; }
