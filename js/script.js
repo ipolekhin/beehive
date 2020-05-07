@@ -7,7 +7,7 @@
     loop: true,
     nav: true,
     dots: false,
-    navText: ['<img src="img/icon__arrow-left.svg" alt="" width="52" height="52">', '<img src="img/icon__arrow-right.svg" alt="" width="52" height="52">'],
+    navText: ['<img src="img/icon__arrow-left.svg" alt="" width="72" height="72">', '<img src="img/icon__arrow-right.svg" alt="" width="72" height="72">'],
     responsive: {
       0: {
         autoWidth: false,

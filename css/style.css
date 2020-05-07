@@ -192,6 +192,12 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+@media (max-width: 1440px) {
+  body {
+    width: 1440px;
+    overflow-y: auto;
+    overflow-x: hidden; } }
+
 .container {
   margin: 0 auto;
   padding: 0; }
@@ -219,18 +225,18 @@ img {
 .owl-nav {
   position: static; }
   .owl-nav button {
-    width: 52px;
-    height: 52px; }
+    width: 72px;
+    height: 72px; }
   .owl-nav .owl-prev {
     position: absolute;
     top: 50%;
-    left: 76px;
-    margin-top: -28px; }
+    left: 62px;
+    margin-top: -69px; }
   .owl-nav .owl-next {
     position: absolute;
     top: 50%;
-    right: 76px;
-    margin-top: -28px; }
+    right: 64px;
+    margin-top: -69px; }
 
 .page-header {
   position: relative;
@@ -381,10 +387,6 @@ img {
   left: 0;
   bottom: -79px; }
 
-@media (max-width: 1440px) {
-  .intro {
-    overflow: hidden; } }
-
 .about__wrapper {
   position: relative;
   padding: 4px 150px 70px; }
@@ -479,6 +481,7 @@ img {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 28px 20px 42px 21px;
+  min-height: 578px;
   border-radius: 0 0 15px 15px;
   -webkit-box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1); }
@@ -641,9 +644,12 @@ img {
   bottom: -134px;
   z-index: 102; }
 
+.save {
+  position: relative; }
+
 .save__wrapper {
   margin: 0;
-  padding: 124px 85px; }
+  padding: 104px 85px; }
 
 .save__title {
   margin: 0 0 60px 65px;
@@ -683,7 +689,22 @@ img {
 .save__text {
   margin: 0; }
 
+.save__icon-1 {
+  position: absolute;
+  right: 590px;
+  top: -24px; }
+
+.save__icon-2 {
+  position: absolute; }
+  .save__icon-2--right {
+    top: 29px;
+    right: -59px; }
+  .save__icon-2--left {
+    bottom: 256px;
+    left: 0; }
+
 .help {
+  position: relative;
   margin-bottom: 100px; }
   .help .button {
     margin-top: 70px;
@@ -706,7 +727,7 @@ img {
     background: url("../img/help-man.png") no-repeat center center; }
 
 .help__title {
-  margin: 338px 0 81px 354px;
+  margin: 358px 0 81px 354px;
   font-size: 46px;
   line-height: 56px;
   text-transform: uppercase; }
@@ -732,6 +753,11 @@ img {
     height: 51px;
     background: url("../img/icon__help-check.svg") no-repeat center center; }
 
+.help__icon-3 {
+  position: absolute;
+  right: 0;
+  top: -208px; }
+
 .page-footer {
   position: relative;
   margin: 0;
@@ -746,7 +772,8 @@ img {
     content: "";
     position: absolute;
     top: -255px;
-    left: 21px;
+    left: 50%;
+    margin-left: -720px;
     width: 1440px;
     height: 719px;
     background: url("../img/footer-bg.png") no-repeat top center;
