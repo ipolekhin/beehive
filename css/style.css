@@ -596,10 +596,10 @@ img {
   .cases::after {
     content: "";
     position: absolute;
-    bottom: -82px;
+    bottom: -95px;
     left: 0;
     width: 1440px;
-    height: 264px;
+    height: 854px;
     background: url("../img/cases-bg.png") no-repeat bottom center;
     z-index: 100; }
 
@@ -607,15 +607,19 @@ img {
   padding: 94px 150px;
   text-align: center;
   color: #ffffff;
-  background-color: #000000;
-  z-index: 101; }
+  background-color: #000000; }
+  .cases__wrapper span {
+    position: relative;
+    z-index: 101; }
 
 .cases__title {
+  position: relative;
   margin: 0;
   margin-bottom: 22px;
   font-size: 59px;
   line-height: 72px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  z-index: 101; }
 
 .cases__list {
   position: relative;
@@ -652,7 +656,7 @@ img {
   padding: 104px 85px; }
 
 .save__title {
-  margin: 0 0 60px 65px;
+  margin: 0 0 36px 65px;
   font-size: 48px;
   line-height: 59px;
   text-transform: uppercase; }
@@ -666,10 +670,18 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .save__row:last-child {
-    margin-top: -110px;
+  .save__row--first .save__item:first-child {
+    background: url("../img/save-bg.svg") no-repeat center center; }
+  .save__row--first .save__item:last-child {
+    background: url("../img/save-bg.svg") no-repeat center center, url("../img/save-bg-line.svg") no-repeat center center; }
+  .save__row--second {
+    margin-top: -149px;
     margin-left: 246px; }
-    .save__row:last-child .save__head {
+    .save__row--second .save__item:first-child {
+      background: url("../img/save-bg.svg") no-repeat center center, url("../img/save-bg-line.svg") no-repeat center center; }
+    .save__row--second .save__item:last-child {
+      background: url("../img/save-bg.svg") no-repeat center center; }
+    .save__row--second .save__head {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -681,12 +693,12 @@ img {
 .save__item {
   position: relative;
   padding: 124px 25px 124px;
-  width: 466px;
-  height: 531px;
-  background: url("../img/save-bg.svg") no-repeat center center; }
+  width: 496px;
+  height: 574px; }
   .save__item:first-child {
-    margin-right: 23px;
-    margin-left: 35px; }
+    margin-left: 20px; }
+  .save__item:last-child {
+    margin-left: -5px; }
 
 .save__head {
   margin: 0;
@@ -714,6 +726,7 @@ img {
 
 .help {
   position: relative;
+  margin-top: 335px;
   margin-bottom: 100px; }
   .help .button {
     margin-top: 70px;
@@ -736,7 +749,7 @@ img {
     background: url("../img/help-man.png") no-repeat center center; }
 
 .help__title {
-  margin: 358px 0 81px 354px;
+  margin: 20px 0 81px 354px;
   font-size: 46px;
   line-height: 56px;
   text-transform: uppercase; }
@@ -814,7 +827,8 @@ img {
   margin: 27px 0; }
 
 .page-footer__partner-link {
-  margin-top: 27px; }
+  margin-top: 27px;
+  text-decoration: underline; }
 
 .form {
   display: -webkit-box;
