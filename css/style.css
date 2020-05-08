@@ -703,8 +703,8 @@ img {
 .save__descr {
   margin-top: 25px;
   margin-left: 27px;
-  padding-bottom: 50px;
-  height: 100%; }
+  height: 296px;
+  overflow: hidden; }
 
 .save__head {
   margin: 0;

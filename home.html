@@ -478,10 +478,17 @@
             <a class="page-footer__partner-link" href="#">Карта партнёра</a>
           </div>
 
-          <form class="form" action="">
-            <input type="text" placeholder="Ваше имя" />
+          <form
+            class="form"
+            method="post"
+            enctype="multipart/form-data"
+            action="send.php">
 
-            <input type="tel" placeholder="Телефон" />
+            <input type="text" name="name" placeholder="Ваше имя" />
+
+            <input type="tel" name="phone" placeholder="Телефон" />
+
+            <input type="hidden" name="email" value="ipolekhin@yandex.ru">
 
             <input type="submit" value="Обратный звонок"/>
           </form>
