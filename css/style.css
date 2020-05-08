@@ -675,7 +675,7 @@ img {
   .save__row--first .save__item:last-child {
     background: url("../img/save-bg.svg") no-repeat center center, url("../img/save-bg-line.svg") no-repeat center center; }
   .save__row--second {
-    margin-top: -149px;
+    margin-top: -148px;
     margin-left: 246px; }
     .save__row--second .save__item:first-child {
       background: url("../img/save-bg.svg") no-repeat center center, url("../img/save-bg-line.svg") no-repeat center center; }
@@ -699,6 +699,12 @@ img {
     margin-left: 20px; }
   .save__item:last-child {
     margin-left: -5px; }
+
+.save__descr {
+  margin-top: 25px;
+  margin-left: 27px;
+  padding-bottom: 50px;
+  height: 100%; }
 
 .save__head {
   margin: 0;
