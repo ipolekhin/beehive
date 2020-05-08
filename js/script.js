@@ -26,24 +26,15 @@
 })();
 
 const formSend = document.querySelector('.form__send');
+formSend.reset();
 
 formSend.addEventListener('submit', (event) => {
   event.preventDefault();
   var xhr = new XMLHttpRequest();
   xhr.responseType = 'json';
 
-  xhr.addEventListener('load', function () {
-    console.log(xhr.status);
-    console.log(typeof xhr.status);
-    if (xhr.status === 200) {
-      console.log('урааа');
-      alert('Спасибо, мы свяжемся с Вами в ближайшее время!');
-    } else {
-
-      alert('Ошибка');
-    }
-  });
-
-  xhr.open('POST', formSend.action, true);
+  xhr.open('POST', formSend.action);
   xhr.send(new FormData(formSend));
+  alert('Спасибо, мы свяжемся с Вами в ближайшее время!');
+  formSend.reset();
 });
