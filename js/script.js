@@ -24,3 +24,14 @@
     }
   });
 })();
+
+const formSend = document.querySelector('.form__send');
+
+formSend.addEventListener('submit', (event) => {
+  event.preventDefault();
+  var xhr = new XMLHttpRequest();
+  xhr.responseType = 'json';
+
+  xhr.open('POST', formSend.action, true);
+  xhr.send(new FormData(formSend));
+});
