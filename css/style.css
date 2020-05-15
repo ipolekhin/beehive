@@ -384,7 +384,7 @@ img {
 
 .intro__icon-3 {
   position: absolute;
-  left: 0;
+  left: -93px;
   bottom: -79px; }
 
 .about__wrapper {
@@ -783,8 +783,8 @@ img {
 
 .help__icon-3 {
   position: absolute;
-  right: 0;
-  top: -208px; }
+  right: -97px;
+  top: -210px; }
 
 .page-footer {
   position: relative;
